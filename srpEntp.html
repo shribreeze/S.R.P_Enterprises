@@ -3,37 +3,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <style>
+      .navbar {
+        transition-duration: 0.5s;
+        transition: ease-in-out;
+      }
+      .navbar-red {
+        background: linear-gradient(45deg, rgb(79, 5, 5), rgb(4, 4, 99)) !important;
+        color: #ffffff !important;
+      }
+
+      /* .square {
+        background: grey;
+        transform: rotateZ(-45deg);
+        animation: rotateAnimation 1s linear infinite;
+      }
+
+      @keyframes rotateAnimation {
+        from {transform: rotateY(45deg);}
+        to {transform: rotateY(225deg);}
+      } */
+
+      .swing {
+          animation: swing ease-in-out 1s infinite alternate;
+          transform-origin: center -20px;
+          float:left;
+          box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      }
+      .swing img {
+          border: 5px solid #f8f8f8;
+          display: block;
+      }
+      .swing:after{
+          content: '';
+          position: absolute;  
+          width: 20px; height: 20px;  
+          border: 1px solid #999;
+          top: -10px; left: 50%;
+          z-index: 0;
+          border-bottom: none;
+          border-right: none;
+          transform: rotate(45deg);
+      }
+      /* nail */
+      .swing:before{
+          content: '';
+          position: absolute;
+          width: 5px; height: 5px;
+          top: -14px;left: 54%;
+          z-index: 5;
+          border-radius: 50% 50%;
+          background: #000;
+      }
+      
+      @keyframes swing {
+          0% { transform: rotate(3deg); }
+          100% { transform: rotate(-3deg); }
+      }
+    </style>
     <title>Document</title>
 </head>
-<!-- <body class="font-sans" style="background-image: url(./images/LOGO.png); height: 100vh; overflow: hidden;"> -->
+<!-- <body class="font-sans" style="background-image: url(./images/srpBG1.png); height: 100vh; overflow: hidden;"> -->
 <body class="font-sans">
 
-
-    <div class="navbar bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl p-4" style="box-shadow: rgba(0, 0, 0, 0.5) 0px -1px inset;">
-        <div class="container mx-auto flex justify-between items-center">
-            <img class="hidden sm:block w-20 h-16" src="/images/temp.png" alt="Logo">
-            <a href="#" class="text-white text-xl font-bold sm:text-3xl">SHRI R.P. ENTERPRISES</a>
-
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="text-white hover:text-gray-300">Products</a>
-                <a href="#" class="text-white hover:text-gray-300">About</a>
-                <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
-            </div>
-            <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-white focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                </button>
-            </div>
-        </div>
+<div class="mt-0">
+  <div class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl p-4" style="box-shadow: rgba(0, 0, 0, 0.5) 0px -1px inset;">
+    <div class="container mx-auto flex justify-between items-center">
+      <img class="hidden sm:block w-20 h-16" src="/images/temp.png" alt="Logo">
+      <a href="#" class="text-white text-xl font-bold sm:text-3xl">SHRI R.P. ENTERPRISES</a>
+      
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-white hover:text-gray-300">Products</a>
+        <a href="#" class="text-white hover:text-gray-300">About</a>
+        <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
+      </div>
+      <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+      </div>
     </div>
-    <div id="mobile-menu" class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-95 z-50 hidden">
+  </div>
+      <div id="mobile-menu" class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-95 z-50 hidden">
         <div class="flex justify-end p-4">
           <button id="close-mobile-menu-btn" class="text-white focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>              
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>              
           </button>
         </div>
         <div class="flex flex-col items-center">
@@ -43,29 +101,21 @@
           <a href="#" class="text-white hover:text-gray-300 my-2">Contact Us</a>
         </div>
       </div>
-
-      <div class="text-black">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptates modi voluptatibus quod quasi, dolores corrupti eligendi delectus expedita ad quam repellat, eaque neque ut nesciunt nobis? Sit, officia minima.
-      </div>
-
-
-
-
-
-      <script>
-        // Toggle mobile menu visibility
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+  </div>
+  
+          
+      <!-- <img  src="./images/homeBg1.webp" class="w-full" style="height: 100vh;"> -->
       
-        mobileMenuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-      
-        closeMobileMenuBtn.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-        });
-      </script>
+    <div class="text-black text-center flex flex-col items-center justify-center mt-10 bg-cover bg-[url('/images/homeBg1.webp')]">
+      <img src="./images/temp.png" class="my-14 swing h-28">
+      <p class="text-2xl">Hello World
+        Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque nisi vitae ducimus voluptatum, praesentium vero voluptatibus magni delectus officia recusandae soluta eius tenetur cum fugiat pariatur quasi porro illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga alias cumque, numquam modi autem illum eius magni recusandae est fugiat accusamus distinctio, beatae quam, facilis eligendi voluptatum eum sequi? Dolores. adipisicing elit. At sit saepe molestias sed molestiae repellendus dicta deserunt labore hic numquam vel repudiandae quo dolores, debitis corporis deleniti iste omnis adipisci?
+      </p>
+    </div>
+
+
+
+  <script src="/srp.js"></script>
 
 </body>
 </html>
