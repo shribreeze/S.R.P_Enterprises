@@ -18,7 +18,7 @@ document.onreadystatechange = function() {
   window.addEventListener('scroll', function(e) {
     lastScrollPosition = window.scrollY;
     
-    if (lastScrollPosition > 100)
+    if (lastScrollPosition > 20)
       navbar.classList.add('navbar-red');
     else
       navbar.classList.remove('navbar-red');
