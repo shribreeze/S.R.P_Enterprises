@@ -61,4 +61,40 @@ function resetFilters() {
   filters.type = 'all';
   // filters.size = 'all';
   applyFilters();
+  resetActiveClass();
 }
+
+// Add active class to the current button 
+function resetActiveClass() {
+  var btns = document.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].classList.remove("active");
+  }
+}
+
+var header = document.getElementById("activeBtn");
+var btns = header.getElementsByClassName("btn");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    if (this.classList.contains("active")) {
+      this.classList.remove("active"); // remove the class if it exists
+    } else {
+
+      if (current.length > 0) {
+        current[0].classList.remove("active");
+      }
+
+      this.classList.add("active");
+    }
+  });
+}
+
+var resetBtn = document.getElementById("resetButton");
+resetBtn.addEventListener("click", function() {
+  resetActiveClass();
+});
+
+
