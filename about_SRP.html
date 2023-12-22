@@ -1,7 +1,8 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" href="./images/srp_logo_white.png" type="image/png">
     <title>Shri R.P. Enterprises - About</title>
 </head>
@@ -20,7 +21,7 @@
   
             <div class="hidden md:flex space-x-4">
               <a href="./products.html" class="text-white hover:text-black">Products</a>
-              <a href="./about_SRP.html" class="text-white hover:text-black">About</a>
+              <!-- <a href="./about_SRP.html" class="text-white hover:text-black">About</a> -->
               <a href="#contactUs" class="text-white hover:text-red-950"
                 >Contact Us</a
               >
@@ -75,7 +76,7 @@
               >SHRI R.P. ENTERPRISES</a
             >
             <a href="./products.html" class="text-white hover:text-black my-2">Products</a>
-            <a href="./about_SRP.html" class="text-white hover:text-black my-2">About</a>
+            <!-- <a href="./about_SRP.html" class="text-white hover:text-black my-2">About</a> -->
             <a href="#contactUs" class="text-white hover:text-black my-2"
               >Contact Us</a
             >
@@ -83,6 +84,29 @@
         </div>
       </div>
       
+      <div class="mt-20 mb-20 text-center px-1 sm:mt-32 sm:mx-10">
+        <p class="text-red-950 text-xl my-2 font-semibold md:text-2xl">
+          ABOUT US
+        </p>
+        <p class="text-blue-950">
+          Welcome to Shri R.P. Enterprises, a leading name in pharmaceutical packaging. 
+          With a legacy of excellence, we have been dedicated to providing innovative and high-quality packaging solutions since our inception.
+        </p>
+        <p class="text-red-950 text-xl mb-2 mt-10 font-semibold md:text-2xl md:mt-10">
+          OUR STORY
+        </p>
+        <p class="text-blue-950">
+          Founded in 2010, Shri R.P. Enterprises has grown to become a trusted partner for pharmaceutical companies nationwide. 
+          Our journey has been marked by a relentless pursuit of manufacturing excellence and a commitment to meeting the evolving needs of the industry.
+        </p>
+        <p class="text-red-950 text-xl mb-2 mt-10 font-semibold md:text-2xl md:mt-10">
+          MISSION
+        </p>
+        <p class="text-blue-950">
+          At the heart of our mission is a dedication to delivering products that not only meet but exceed regulatory standards. 
+          We strive to be at the forefront of technological advancements, ensuring that our clients receive packaging solutions that are not only reliable but also forward-thinking.
+        </p>
+      </div>
       
       <footer
     class="bg-blue-50 text-center text-white dark:bg-blue-950 dark:text-white lg:text-left">
@@ -222,6 +246,35 @@
       <span>© 2023 Copyright:<span class="font-semibold"> Shri R.P. Enterprises</span></span>
     </div>
     </footer>
+
+    <script>
+            // Toggle mobile menu visibility
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      closeMobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+
+      //navbar scroll effect
+      document.onreadystatechange = function() {
+        let lastScrollPosition = 0;
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function(e) {
+          lastScrollPosition = window.scrollY;
+          
+          if (lastScrollPosition > 20)
+            navbar.classList.add('navbar-red');
+          else
+            navbar.classList.remove('navbar-red');
+        });
+      }
+    </script>
     
 </body>
 </html>
