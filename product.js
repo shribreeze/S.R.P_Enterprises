@@ -98,3 +98,8 @@ resetBtn.addEventListener("click", function() {
 });
 
 
+// JavaScript function to toggle the visibility of button options
+function toggleButtonOptions() {
+  var buttonOptions = document.getElementById('buttonOptions');
+  buttonOptions.classList.toggle('hidden');
+}
