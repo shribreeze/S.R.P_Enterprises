@@ -1,0 +1,1132 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="./images/srp_logo_white.png" type="image/png">
+    <title>Shri R.P. Enterprises - Products</title>
+    <style>
+        .navbar {
+        transition-duration: 0.5s;
+        transition: ease-in-out;
+      }
+      .navbar-red {
+        background: linear-gradient(
+          45deg,
+          rgb(79, 5, 5),
+          rgb(4, 4, 99)
+        ) !important;
+        color: #ffffff !important;
+      }
+
+      .active {
+        background-color: rgb(254, 226, 226);
+      }
+
+    </style>
+</head>
+<body>
+    <div class="mt-0">
+        <div
+          class="navbar fixed top-0 z-50 text-center w-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg hover:bg-gradient-to-bl p-4 sm:p-2"
+          style="box-shadow: rgba(0, 0, 0, 0.5) 0px -1px inset"
+        >
+          <div class="container mx-auto flex justify-between items-center">
+            <img
+            class="hidden rounded-sm sm:block w-36 h-16"
+            src="/images/srp_logo_white.png"
+            alt="Logo"
+          />
+            <!-- <p class="text-white text-xl font-bold sm:text-3xl"
+              >SHRI R.P. ENTERPRISES</p
+            > -->
+  
+            <div class="hidden md:flex space-x-4">
+              <a href="./shri-RP-Enterprises_about.html" class="text-white hover:text-blue-100">About</a>
+              <a href="#contactUs" class="text-white hover:text-blue-100"
+                >Contact Us</a
+              >
+            </div>
+            <div class="md:hidden">
+              <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="mobile-menu"
+          class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-95 z-50 hidden"
+        >
+          <div class="flex justify-end p-4">
+            <button
+              id="close-mobile-menu-btn"
+              class="text-white focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="text-white text-lg font-bold my-2"
+              >SHRI R.P. ENTERPRISES</p
+            >
+            <a href="./shri-RP-Enterprises_about.html" class="text-white hover:text-blue-100 my-2">About</a>
+            <a href="#contactUs" class="text-white hover:text-blue-100 my-2"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+    </div>
+
+      
+      <div class="text-center flex items-center justify-center mt-24 sm:mt-32 mb-10">
+        <p class="text-black text-4xl">OUR PRODUCTS</p>
+    </div>
+    
+    <div class="hidden flex-wrap mx-5 sm:mx-6 sm:flex md:mx-16 lg:mx-20">
+        <div class="bg-red-100 p-2">
+            <div class="px-6 bg-red-100">
+                <button class="text-xl">TYPE</button>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap bg-blue-100 p-2" id="activeBtn">
+
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'alu-alu-base-foil')">Alu Alu Base Foil</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'dropper')">Dropper</button>
+            </div>
+
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'flip-off-seals')">Flip Off Seal</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'measuring-cap')">Measuring Cap</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pet-bottle')">Pet Bottle</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'plastic-lid')">Plastic Lid</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pp-cap')">PP Cap</button>
+            </div>
+        
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pvc')">PVC</button>
+            </div>
+
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'rubber-stopper')">Rubber Stopper</button>
+            </div>
+
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'screw-cap')">Screw Cap</button>
+            </div>
+            
+            <div class="">
+                <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'tablet-applicator')">Tablet Applicator</button>
+            </div>
+            
+            <div class="">
+                <button class="px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="resetFilters()">Reset</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="flex flex-wrap mx-5 sm:mx-10 sm:hidden md:mx-16 lg:mx-20">
+        <div class="bg-red-100 p-2 cursor-pointer" onclick="toggleButtonOptions()">
+            <div class="px-6 bg-red-100 flex">
+                <p class="text-xl pr-4">TYPE</p>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap bg-blue-100 p-2" id="activeBtn">
+            <div class="hidden" id="buttonOptions">
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'alu-alu-base-foil')">Alu Alu Base Foil</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'dropper')">Dropper</button>
+                </div>
+
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'flip-off-seals')">Flip Off Seal</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'measuring-cap')">Measuring Cap</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pet-bottle')">Pet Bottle</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'plastic-lid')">Plastic Lid</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pp-cap')">PP Cap</button>
+                </div>
+            
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'pvc')">PVC</button>
+                </div>
+
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'rubber-stopper')">Rubber Stopper</button>
+                </div>
+
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'screw-cap')">Screw Cap</button>
+                </div>
+                
+                <div class="">
+                    <button class="btn px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="toggleFilter('type', 'tablet-applicator')">Tablet Applicator</button>
+                </div>
+                
+                <div class="">
+                    <button class="px-4 py-1 my-1 mx-2 border-2 border-blue-950" onclick="resetFilters()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-12 mx-auto px-4 md:px-4" id="items-container">
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+    
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="alu-alu-base-foil">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Alu-Alu-Base-Foil" class="block h-auto w-full" src="./images/products/Alu-Alu-Base-Foil.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Alu Alu Base Foil
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="dropper">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Assembled-Dropper" class="block h-auto w-full" src="./images/products/Assembled-Droper.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Assembled Dropper
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="measuring-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Measuring-Cap-Colour" class="block h-auto w-full" src="./images/products/Color-Measuring-Cap.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Measuring Cap Colour
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="measuring-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Measuring-Cap" class="block h-auto w-full" src="./images/products/measuring-cap.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Measuring Cap
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="measuring-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Measuring-Cap-15-ml" class="block h-auto w-full" src="./images/products/Measuring-Cap-15_ml.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Measuring Cap 15 ml
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="measuring-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Measuring-Cap-30-ml" class="block h-72 w-full" src="./images/products/Measuring-Cap-30-ml.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Measuring Cap 30 ml
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="measuring-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Multicolor-Measuring-Cap" class="block h-auto w-full" src="./images/products/Multicolor-Measuring-Cap.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Multicolor Measuring Cap
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="plastic-lid">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Plastic-Lid" class="block h-auto w-full" src="./images/products/Plastic-Lid.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Plastic Lid
+                        </h1>
+                    </header>  
+                </article>
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="plastic-lid">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Plastic-Lid-307" class="block h-auto w-full" src="./images/products/Plastic-Lid-307.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Plastic Lid 307
+                        </h1>
+                    </header>  
+                </article>
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pvc">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Rigid-PVC" class="block h-auto w-full" src="./images/products/Rigid-PVC.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Rigid PVC
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pvc">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Rigid-Clear-PVC" class="block h-auto w-full" src="./images/products/Rigid-Clear-PVC.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Rigid Clear PVC
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="tablet-applicator">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Tablet-Applicator" class="block h-auto w-full" src="./images/products/Tablet-Applicator.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Tablet Applicator
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="flip-off-seals">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Flip-Off-Seals" class="block h-auto w-full" src="./images/products/Flip-off-seals.png">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Flip Off Seals
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="rubber-stopper">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Rubber-Stopper" class="block h-auto w-full" src="./images/products/rubber-stopper.png">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Rubber Stopper
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="screw-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="Screw-cap" class="block h-auto w-full" src="./images/products/Screw-Cap.png">
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            Screw Cap
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pp-cap">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="22-25-28-Aluminium-PP-Cap" class="block h-auto w-full" src="./images/products/22-25-28-Aluminium-PP-Cap.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            22/25/28 mm Aluminium PP Cap
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="10-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="10-ml-22-mm-Round-Amber" class="block h-auto w-full" src="./images/products/10-ml-22-mm-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            10 ml 22 mm Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="10-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="10-ml-25-mm-Round-Amber" class="block h-auto w-full" src="./images/products/10-ml-25-mm-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            10 ml 25 mm Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-22-mm-Round" class="block h-auto w-full" src="./images/products/100-ml-22-mm-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml 22 mm Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-Brute" class="block h-auto w-full" src="./images/products/100-ml-Brute.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml Brute
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-DS-Oval" class="block h-auto w-full" src="./images/products/100-ml-DS-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml DS Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-Micro-Brute" class="block h-auto w-full" src="./images/products/100-ml-Micro-Brute.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml Micro Brute
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-Micro-Round" class="block h-auto w-full" src="./images/products/100-ml-Micro-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml Micro Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-Oval" class="block h-auto w-full" src="./images/products/100-ml-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="100-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="100-ml-Round" class="block h-auto w-full" src="./images/products/100-ml-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            100 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="120-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="120-ml-Gulab-Jal" class="block h-auto w-full" src="./images/products/120-ml-Gulab-Jal.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            120 ml Gulab Jal
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="120-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="120-ml-Oval" class="block h-auto w-full" src="./images/products/120-ml-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            120 ml Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="120-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="120-ml-Round-Ring" class="block h-auto w-full" src="./images/products/120-ml-Round-Ring.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            120 ml Round Ring
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="120-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="120-ml-Round-Ring" class="block h-auto w-full" src="./images/products/120-ml-Round-Ring.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            120 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="15-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="15-ml-22-mm-Round" class="block h-auto w-full" src="./images/products/15-ml-22-mm-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            15 ml 22 mm Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="15-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="15-ml-25-mm-Round" class="block h-auto w-full" src="./images/products/15-ml-25-mm-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            15 ml 25 mm Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="150-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="150-ml-Badam" class="block h-auto w-full" src="./images/products/150-ml-Badam.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            150 ml Badam
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="150-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="150-ml-Gripe-Water" class="block h-auto w-full" src="./images/products/150-ml-Gripe-Water.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            150 ml Gripe Water
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="150-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="150-ml-Oval" class="block h-auto w-full" src="./images/products/150-ml-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            150 ml Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="150-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="150-ml-Round-Amber" class="block h-auto w-full" src="./images/products/150-ml-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            150 ml Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="170-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="170-ml-Oval-Amber" class="block h-auto w-full" src="./images/products/170-ml-Oval-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            170 ml Oval Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="170-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="170-ml-Oval-Clear" class="block h-auto w-full" src="./images/products/170-ml-Oval-Clear.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            170 ml Oval Clear
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="170-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="170-ml-Round" class="block h-auto w-full" src="./images/products/170-ml-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            170 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Brute-Amber" class="block h-auto w-full" src="./images/products/200-ml-Micro-Brute-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Brute Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-DS-Oval" class="block h-auto w-full" src="./images/products/200-ml-DS-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml DS Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Flat" class="block h-auto w-full" src="./images/products/200-ml-Flat.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Flat
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Micro-Brute-Amber" class="block h-auto w-full" src="./images/products/200-ml-Micro-Brute-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Micro Brute Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Micro-Round" class="block h-auto w-full" src="./images/products/200-ml-Micro-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Micro Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Round-Amber" class="block h-auto w-full" src="./images/products/200-ml-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="200-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="200-ml-Santivani" class="block h-auto w-full" src="./images/products/200-ml-Santivani.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            200 ml Santivani
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="225-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="225-ml-Micro-Brute-Amber" class="block h-auto w-full" src="./images/products/225-ml-Micro-Brute-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            225 ml Micro Brute Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="230-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="230-ml-Micro-Round" class="block h-auto w-full" src="./images/products/230-ml-Micro-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            230 ml Micro Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="250-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="250-ml-28-mm-Oval" class="block h-auto w-full" src="./images/products/250-ml-28-mm-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            250 ml 28 mm Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="30-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="30-ml-Oval-Green" class="block h-auto w-full" src="./images/products/30-ml-Oval-Green.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            30 ml Oval Green
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="30-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="30-ml-round" class="block h-auto w-full" src="./images/products/30-ml-round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            30 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="300-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="300-ml-Brute" class="block h-auto w-full" src="./images/products/300-ml-Brute.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            300 ml Brute
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="300-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="300-ml-Oval" class="block h-auto w-full" src="./images/products/300-ml-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            300 ml Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="300-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="300-ml-Santivani" class="block h-auto w-full" src="./images/products/300-ml-Santivani.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            300 ml Santivani
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="450-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="450-ml-Round" class="block h-auto w-full" src="./images/products/450-ml-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            450 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="50-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="50-ml-Oval" class="block h-auto w-full" src="./images/products/50-ml-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            50 ml Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="500-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="500-ml-Long-Round-Amber" class="block h-auto w-full" src="./images/products/500-ml-Long-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            500 ml Long Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="500-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="500-ml-Round" class="block h-auto w-full" src="./images/products/500-ml-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            500 ml Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-22-mm-Round" class="block h-auto w-full" src="./images/products/60-ml-22-mm-Round.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml 22 mm Round
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-Badam" class="block h-auto w-full" src="./images/products/60-ml-Badam.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml Badam
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-DS-Oval" class="block h-auto w-full" src="./images/products/60-ml-DS-Oval.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml DS Oval
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-Oval-Orange" class="block h-auto w-full" src="./images/products/60-ml-Oval-Orange.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml Oval Orange
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-Round-Amber" class="block h-auto w-full" src="./images/products/60-ml-Round-Amber.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml Round Amber
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="60-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="60-ml-Round-Ring" class="block h-auto w-full" src="./images/products/60-ml-Round-Ring.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            60 ml Round Ring
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="pet-bottle" data-size="95-ml">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="95-ml-Pet-Jar" class="block h-auto w-full" src="./images/products/95-ml-Pet-Jar.jpg">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            95 ml Pet Jar
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <!-- <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="" data-size="">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="" class="block h-auto w-full" src="./images/products/">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            name
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="" data-size="">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="" class="block h-auto w-full" src="./images/products/">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            name
+                        </h1>
+                    </header>    
+                </article>  
+            </div>  
+            
+            <div class="item my-1 px-1 w-full min-[360px]:w-1/2 md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4" data-type="" data-size="">
+                <article class="overflow-hidden rounded-lg shadow-lg">                  
+                        <img alt="" class="block h-auto w-full" src="./images/products/">  
+                    <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                        <h1 class="text-base text-black">
+                            name
+                        </h1>
+                    </header>    
+                </article>  
+            </div>
+     -->
+        </div>
+    </div>
+
+
+
+    <footer
+        class="bg-blue-50 text-center text-white dark:bg-blue-950 dark:text-white lg:text-left">
+    
+    <div class="mx-6 py-10 text-center md:text-left">
+      <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="">
+          <h6
+            class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mr-3 h-5 w-5">
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+            </svg>
+            SHRI R.P. ENTERPRISES
+          </h6>
+          <p class="pb-4">
+            Khasra No. 272, Showroom No. 7-8-9-10, <br>
+            Vill - Beli Deor, P.O - Khera, NH-21A, <br>
+            Near Raj Industries, Tehsil - Nalagarh<br>
+            Distt - Solan, (H.P) 174101
+          </p>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mr-3 h-5 w-5">
+              <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+            </svg>
+            srp.hp2010@gmail.com<br>
+            kumarkush80@gmail.com
+          </p>
+          <p class="mb-4 flex items-center justify-center md:justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mr-3 h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd" />
+            </svg>
+            + 91 921 873 8987 <br>
+            + 91 941 891 5205
+          </p>
+        </div>
+        
+        <div class="">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Components
+          </h6>
+          <p class="mb-4">
+            <a href="./shri-RP-Enterprises.html" class="text-white dark:text-white"
+              >Home</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="#products" class="text-white dark:text-white"
+              >Products</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="./shri-RP-Enterprises_about.html" class="text-white dark:text-white"
+              >About</a
+            >
+          </p>
+        </div>
+        
+        <div class="">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Useful links
+          </h6>
+          <p class="mb-4">
+            <a href="./index.html" class="text-white dark:text-white"
+              >Home</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="./aryaIndustries.html" class="text-white dark:text-white"
+              >Arya Industries</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="./shreeFoils.html" class="text-white dark:text-white"
+              >Shree Foils Pack</a
+            >
+          </p>
+        </div>
+        
+        <div id="contactUs">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Contact
+          </h6>
+          <section class="bg-white dark:bg-blue-950">
+            <div class="py-1 lg:py-1 px-4 mx-auto max-w-screen-md">
+                <form action="https://formspree.io/f/{form_id}" method="POST" autocomplete="off" class="space-y-4">
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-black shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-white dark:border-black dark:placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                        <textarea id="message" rows="2" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-black focus:ring-primary-500 focus:border-primary-500 dark:bg-white dark:border-black dark:placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Let us know how we can help you..."></textarea>
+                    </div>
+                    <button type="submit" class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit focus:ring-4 focus:outline-none focus:ring-white dark:bg-black dark:focus:ring-black hover:bg-white hover:text-black">Send message</button>
+                </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-blue-100 p-6 text-center dark:bg-red-950">
+      <span>Designed By:</span>
+      <a
+        class="font-semibold text-white dark:text-white"
+        href="https://sameerportfolio-3dd95.web.app/" target="_blank"
+        >Sameer Gautam</a
+      ><br>
+      <span>© 2023 Copyright:<span class="font-semibold"> Shri R.P. Enterprises</span></span>
+    </div>
+    </footer>
+
+    <script src="/shri-RP-Enterprises_product.js"></script>
+</body>
+</html>
